@@ -1,0 +1,14 @@
+:root{
+        --header-title: #fff;
+        --header-close: #fff;
+        --text-box__user: #008F75;
+        --text-box__bot: #585f67;
+        --text-area__bg: #17202c;
+        --text-area__border: ##23262c;
+        --search-area__input: #fff;
+        --search-area__input-bg: #17202c;
+        --search-area__input-outline: #008F75;
+        --search-area__btn: #008F75;
+        --search-area__btn-hover: #fff;
+        --search-area__btn__bg-hover: #008F75;
+}

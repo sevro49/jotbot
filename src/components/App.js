@@ -177,15 +177,15 @@ function App() {
   }, [messageList, showBody]);
 
   return (
-    <div className='bg-gradient-to-b from-white via-white to-black bg-opacity-50' style={{
+    <div className='bg-gradient-to-b from-white via-white to-black bg-opacity-50 w-full h-screen' style={{
       background: `url(${jotformBG})`,
       backgroundSize: "cover",
       backdropFilter: "blur(4px)",
     }}>
-      {showIcon && <BotIcon onButtonClick={toggleIcon} />}
+      {showIcon && <BotIcon onButtonClick={toggleIcon} className="w-full h-full"/>}
       {/* {showBody && <BotBody onButtonClick={toggleBody} sendLastMessage={passLastMessage} botMessage={botMessage} returnMessage={returnMessage} />} */}
 
-      {showBody && <div className="w-100vw h-100vh relative">
+      {showBody && <div className="w-full h-full relative">
         <div className="absolute right-2 bottom-2 w-84 ">
 
           {/* Header */}
@@ -282,10 +282,12 @@ function App() {
             {showThemes && <Themes toggleTheme={toggleTheme} />}
           </div>
         </div>
-      </div>}
+      </div>}      
 
-      {/* <ApiResponse lastMessage={lastMessage} botLastMessage={passBotMessage} returnLastMessageFromBot={returnLastMessage} /> */}
+      <ApiResponse lastMessage={lastMessage} botLastMessage={passBotMessage} returnLastMessageFromBot={returnLastMessage} />
     </div>
+
+    
   );
 }
 

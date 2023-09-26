@@ -1,0 +1,22 @@
+@import url("variables.css");
+@import url("../index.css");
+
+
+.icon-wrapper:hover {
+    color: var(--search-area__btn-hover);
+    background-color: var(--search-area__btn__bg-hover);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(88, 95, 103);
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
