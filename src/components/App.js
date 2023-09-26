@@ -4,15 +4,17 @@ import React, { useState, useEffect, useRef } from 'react';
 // import BotBody from "./BotBody";
 import BotIcon from "./BotIcon";
 import ApiResponse from "./ApiResponse.js";
-import variables from "../css/variables.css";
-import style from "../css/style.css";
+import "../css/variables.css";
+import "../css/style.css";
 import SearchInput from "./SearchInput";
 import Themes from "./Themes";
 import themes from "../theme/themes.js"
 import Greetings from "./Greetings";
 import jotformBG from "../assets/png/jotform-bg.png"
 
-// import { IconXmark, IconPaperPlaneFilled, IconPaintbrushFilled } from "@jotforminc/svg-icons";
+import {AiOutlineClose} from 'react-icons/ai';
+import {BsFillBrushFill} from 'react-icons/bs';
+import {BiSolidSend} from 'react-icons/bi';
 
 function App() {
 
@@ -186,25 +188,26 @@ function App() {
       {/* {showBody && <BotBody onButtonClick={toggleBody} sendLastMessage={passLastMessage} botMessage={botMessage} returnMessage={returnMessage} />} */}
 
       {showBody && <div className="w-full h-full relative">
-        <div className="absolute right-2 bottom-2 w-84 ">
+        <div className="absolute right-2 bottom-2 w-96 ">
 
           {/* Header */}
-          <div className="flex justify-between items-end py-2 px-3 h-14 radius-t-lg border-b-2"
+          <div className="flex justify-between items-center py-2 px-3 h-14 rounded-t-lg border-b-2"
             style={{
               backgroundColor: themeColor.headerBgColor,
               borderColor: themeColor.textAreaBorderColor,
             }}>
-            <h1 className="text-4xl font-bold"
+            <h1 className="title text-4xl font-bold relative top-1"
               style={{
                 color: themeColor.headerTitleColor,
               }}>Jotbot</h1>
 
-            <button onClick={toggleBody} className="group"
+            <button onClick={toggleBody} className="group relative "
               style={{
                 color: themeColor.headerCloseColor,
               }}>
-              {/* <IconXmark className="icon-wrapper w-8 duration-300 radius-lg"
-              /> */}
+              <AiOutlineClose className="icon-wrapper w-8 h-8 p-1 duration-300 m-1 rounded-sm"
+              />
+
             </button>
           </div>
 
@@ -226,12 +229,13 @@ function App() {
                   // Bot Message
                   ? <div className="flex align-center justify-start mb-1" key={item.id}>
                     <div className="flex flex-col">
-                      <div className="max-w-52 ml-2 radius-sm h-auto"
+                      <div className="ml-2 rounded-sm h-auto"
                         style={{
                           width: "fit-content",
+                          maxWidth: "16rem",
                           backgroundColor: themeColor.textBoxBotColor,
                         }}>
-                        <p className="color-white p-1 break-word">
+                        <p className="text-white p-1 break-word">
                           {item.message}
                         </p>
                       </div>
@@ -241,20 +245,21 @@ function App() {
 
                   // User Message
                   : <div className="flex align-center justify-end mb-1" key={item.id}>
-                    <div className="max-w-52 ml-2 radius-sm h-auto bg-yellow-400"
+                    <div className=" ml-2 rounded-sm h-auto bg-yellow-400"
                       style={{
                         width: "fit-content",
+                        maxWidth: "16rem",
                         backgroundColor: themeColor.textBoxUserColor,
 
                       }}>
-                      <p className="color-white p-1 break-word">
+                      <p className="text-white p-1 break-word">
                         {item.message}
                       </p>
                     </div>
                   </div>
               ))}
 
-              {isTyping && <p className="absolute ml-2 radius-sm h-auto mt-1 p-1 color-white" style={{
+              {isTyping && <p className="absolute ml-2 radius-sm h-auto mt-1 p-1 text-white" style={{
                 width: "fit-content",
                 backgroundColor: themeColor.textBoxBotColor,
               }}>typing...</p>}
@@ -263,7 +268,7 @@ function App() {
           </div>
 
           {/* Search */}
-          <div className="flex justify-between items-center py-2 px-3 max-h-14 radius-b-lg border-t-2"
+          <div className="flex justify-between items-center py-2 px-3 max-h-14 rounded-b-lg border-t-2"
             style={{
               backgroundColor: themeColor.textAreaBgColor,
               borderColor: themeColor.textAreaBorderColor,
@@ -271,12 +276,14 @@ function App() {
             <SearchInput sendMessage={sendMessage} currentTheme={currentTheme} passLastMessage={passLastMessage} />
 
             <button onClick={e => { sendMessage(); passLastMessage() }} >
-              {/* <IconPaperPlaneFilled className="icon-wrapper w-8 h-8 radius-lg p-1 duration-300 color-approvals-light"
-              /> */}
+              <BiSolidSend className="icon-wrapper search-icons w-8 h-8 radius-lg p-1 duration-300 rounded-sm" style={{
+              }}
+              />
             </button>
             <button onClick={toggleThemes} className="relative">
-              {/* <IconPaintbrushFilled className="icon-wrapper w-8 h-8 radius-lg p-1 duration-300 color-approvals-light"
-              /> */}
+              <BsFillBrushFill className="icon-wrapper search-icons w-8 h-8 radius-lg p-1 duration-300 rounded-sm" style={{
+              }}
+              />
             </button>
 
             {showThemes && <Themes toggleTheme={toggleTheme} />}

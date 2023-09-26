@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+  font-family: 'JotbotFont';
+  src: url('./fonts/FontsFree-Net-TTCommons-Bold.ttf');
+}

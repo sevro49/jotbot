@@ -1,6 +1,10 @@
 @import url("variables.css");
+@import url("font.css");
 @import url("../index.css");
 
+.search-icons{
+    color: var(--search-area__btn);
+}
 
 .icon-wrapper:hover {
     color: var(--search-area__btn-hover);
