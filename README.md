@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+Live preview  [JotBot](https://sevro49-jotbot.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
