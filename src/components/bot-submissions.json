@@ -1,0 +1,338 @@
+﻿[
+    {
+        "id": 0,
+        "Question": "What is JotForm",
+        "Tag": "what jotform",
+        "Answer": "JotForm is an online form builder that allows you to create, customize, and manage various types of forms, such as surveys, contact forms, registration forms, and more, without requiring coding knowledge."
+    },
+    {
+        "id": 1,
+        "Question": "How do I create a form in JotForm",
+        "Tag": "how create form",
+        "Answer": "\"To create a form in JotForm, log in to your account, click \"\"Create Form,\"\" and use the intuitive drag-and-drop interface to add fields, customize settings, and design the form to your specifications.\""
+    },
+    {
+        "id": 2,
+        "Question": "Can I integrate JotForm with other apps",
+        "Tag": "can integrate other apps",
+        "Answer": "Yes, JotForm offers integrations with various applications and platforms, allowing you to connect your forms with email marketing services, payment processors, CRM systems, and more."
+    },
+    {
+        "id": 3,
+        "Question": "How do I embed a JotForm on my website",
+        "Tag": "how embed jotform website",
+        "Answer": "\"To embed a JotForm on your website, select the form you want to embed, click \"\"Publish,\"\" and choose an embedding option (e.g., iframe, JavaScript). Copy the provided code and paste it into your website's HTML.\""
+    },
+    {
+        "id": 4,
+        "Question": "Can I create a form that accepts online payments",
+        "Tag": "can accept online payments",
+        "Answer": "Yes, JotForm supports online payments through integrations with payment gateways like PayPal, Stripe, and Square. You can create order forms, donation forms, and product purchase forms that process payments securely."
+    },
+    {
+        "id": 5,
+        "Question": "Is JotForm user-friendly for beginners",
+        "Tag": "is user-friendly beginners",
+        "Answer": "Yes, JotForm is designed to be user-friendly, making it accessible for beginners. The drag-and-drop editor, ready-made templates, and helpful guides simplify the form creation process."
+    },
+    {
+        "id": 6,
+        "Question": "How can I customize the design of my form",
+        "Tag": "how customize design form",
+        "Answer": "JotForm's Form Designer lets you customize the appearance of your forms. You can adjust colors, fonts, backgrounds, and even add images to create a form that aligns with your brand's aesthetics."
+    },
+    {
+        "id": 7,
+        "Question": "Can I create multi page forms with JotForm",
+        "Tag": "can multi page forms",
+        "Answer": "Certainly, JotForm supports multi-page forms, which enhance the user experience by breaking longer forms into manageable sections. This can improve completion rates and make navigation easier."
+    },
+    {
+        "id": 8,
+        "Question": "How can I receive email notifications when a form is submitted",
+        "Tag": "how email notifications submitted",
+        "Answer": "You can set up email notifications in the form's settings. Add recipients' email addresses, customize the message, and include form field data to get instant notifications upon form submission."
+    },
+    {
+        "id": 9,
+        "Question": "Is JotForm mobile responsive",
+        "Tag": "is mobile responsive",
+        "Answer": "Yes, JotForm ensures that forms created are automatically mobile-responsive. They adapt seamlessly to various screen sizes, providing a consistent experience across devices."
+    },
+    {
+        "id": 10,
+        "Question": "Can I collect electronic signatures using JotForm",
+        "Tag": "can electronic signatures",
+        "Answer": "Absolutely, JotForm offers electronic signature fields. Users can sign forms digitally using a mouse, touchpad, or touchscreen, making it suitable for agreements and contracts."
+    },
+    {
+        "id": 11,
+        "Question": "How can I organize and manage my forms",
+        "Tag": "how organize manage forms",
+        "Answer": "JotForm provides features like folders and labels, helping you keep your forms organized efficiently. You can group related forms and categorize them for easier access."
+    },
+    {
+        "id": 12,
+        "Question": "Can I export form submissions to Excel",
+        "Tag": "can export form submissions excel",
+        "Answer": "\"Yes, JotForm allows you to export form submissions to Excel format. Within the \"\"Submissions\"\" section of your form, choose the \"\"Download\"\" option to export submission data as an Excel spreadsheet.\""
+    },
+    {
+        "id": 13,
+        "Question": "How can I share my form with others",
+        "Tag": "how share form others",
+        "Answer": "You can share your form by providing its unique URL, embedding it on your website, or sharing the direct link on social media or via email. This makes it easy for others to access and fill out your form."
+    },
+    {
+        "id": 14,
+        "Question": "Can I create forms that allow conditional logic",
+        "Tag": "can create conditional logic forms",
+        "Answer": "Yes, JotForm supports conditional logic, allowing you to show or hide specific fields based on users' responses. This feature helps create dynamic forms tailored to each user's choices."
+    },
+    {
+        "id": 15,
+        "Question": "Is my data secure with JotForm",
+        "Tag": "is data security",
+        "Answer": "Yes, JotForm takes data security seriously. It uses measures such as SSL encryption and complies with data protection regulations to safeguard your data and ensure its confidentiality."
+    },
+    {
+        "id": 16,
+        "Question": "How do I add a CAPTCHA to my form",
+        "Tag": "how add CAPTCHA form",
+        "Answer": "\"To add a CAPTCHA to your form and prevent spam submissions, go to the \"\"Form Elements\"\" section, find \"\"Captcha,\"\" and add it to your form. This helps ensure that submissions are made by real users.\""
+    },
+    {
+        "id": 17,
+        "Question": "Can I create quizzes or tests using JotForm",
+        "Tag": "can create quizzes tests",
+        "Answer": "Indeed, JotForm allows you to create quizzes and tests with various question types. You can assign correct answers and points, and the system will automatically score the quiz for you."
+    },
+    {
+        "id": 18,
+        "Question": "What languages does JotForm support",
+        "Tag": "what support languages",
+        "Answer": "JotForm supports multiple languages, enabling you to create forms in various languages by customizing labels, messages, and instructions according to your audience's preferences."
+    },
+    {
+        "id": 19,
+        "Question": "How can I prevent spam submissions",
+        "Tag": "how prevent spam",
+        "Answer": "\"JotForm offers anti-spam measures like CAPTCHA, reCAPTCHA, and the \"\"Honeypot\"\" method to prevent automated spam submissions, ensuring that your form receives genuine responses.\""
+    },
+    {
+        "id": 20,
+        "Question": "Does JotForm offer event registration templates",
+        "Tag": "does event registration",
+        "Answer": "Yes, JotForm provides event registration templates equipped with fields for attendee information, event preferences, and more. You can personalize these templates to suit your specific event requirements."
+    },
+    {
+        "id": 21,
+        "Question": "Can I create forms with calculations",
+        "Tag": "can form calculations",
+        "Answer": "Certainly, JotForm supports calculations based on user input. You can create order forms, pricing calculators, and forms involving calculations like costs, discounts, and more."
+    },
+    {
+        "id": 22,
+        "Question": "How do I duplicate a form",
+        "Tag": "how duplicate form",
+        "Answer": "\"To duplicate a form, navigate to your Form Dashboard, locate the desired form, and use the \"\"Clone Form\"\" option from the \"\"More\"\" menu. This will create an identical copy of the selected form.\""
+    },
+    {
+        "id": 23,
+        "Question": "\"What's the \"\"Save and Continue Later\"\" feature\"",
+        "Tag": "what save continue later",
+        "Answer": "\"The \"\"Save and Continue Later\"\" feature allows users to save their form progress and return later to complete it using a unique link or code. This is especially helpful for longer forms or when users need more time to gather information.\""
+    },
+    {
+        "id": 24,
+        "Question": "Is there a limit to the number of forms I can create",
+        "Tag": "is limit number form",
+        "Answer": "The number of forms you can create depends on your JotForm plan. Paid plans offer greater flexibility in the number of forms you can create, allowing you to tailor your usage to your needs."
+    },
+    {
+        "id": 25,
+        "Question": "Can I add a survey to my website",
+        "Tag": "can add survey website",
+        "Answer": "Yes, you can embed surveys on your website by using the provided embed code. This lets users take the survey directly on your website, making it convenient for your audience."
+    },
+    {
+        "id": 26,
+        "Question": "How do I embed a JotForm in a WordPress post",
+        "Tag": "how embed JotForm WordPress post",
+        "Answer": "\"To embed a JotForm in a WordPress post, switch to the \"\"Text\"\" editor mode and paste the JotForm embed code. The form will be displayed when you switch back to the visual editor or preview the post.\""
+    },
+    {
+        "id": 27,
+        "Question": "Can I create a form that includes conditional sections",
+        "Tag": "can create conditional form sections",
+        "Answer": "Yes, JotForm enables you to create forms with conditional sections. Depending on the user's responses, you can show or hide entire sections of the form, ensuring a personalized and relevant experience."
+    },
+    {
+        "id": 28,
+        "Question": "How can I create a contact form for my website",
+        "Tag": "how contact form website",
+        "Answer": "Creating a contact form involves adding fields for name, email, subject, message, etc. Customize the form's appearance and settings to match your website's design, and then embed the form on your site."
+    },
+    {
+        "id": 29,
+        "Question": "What are form tags used for",
+        "Tag": "what form tags",
+        "Answer": "Form tags are used to categorize and identify specific topics or aspects of a form. They help in organizing, searching, and retrieving forms that are related to the tagged topics."
+    },
+    {
+        "id": 30,
+        "Question": "Does JotForm provide form analytics",
+        "Tag": "provide form analytics",
+        "Answer": "Yes, JotForm offers form analytics that provide insights into how your forms are performing. You can track submission rates, user engagement, drop-off points, and more to optimize your forms for better results."
+    },
+    {
+        "id": 31,
+        "Question": "Is JotForm HIPAA-compliant",
+        "Tag": "HIPAA compliance",
+        "Answer": "Yes, JotForm offers a HIPAA-compliant solution that ensures the security and confidentiality of healthcare-related form data, allowing medical professionals to collect and manage patient information safely."
+    },
+    {
+        "id": 32,
+        "Question": "Where are form submissions stored",
+        "Tag": "form submissions storage",
+        "Answer": "Form submissions are stored securely on JotForm's servers. You can access and manage them from your JotForm account, and you also have the option to export submission data to other formats."
+    },
+    {
+        "id": 33,
+        "Question": "What payment processing options does JotForm support",
+        "Tag": "what payment processing options",
+        "Answer": "JotForm supports integration with various payment gateways, including PayPal, Stripe, Square, and more. This enables you to securely process online payments through your forms for different purposes."
+    },
+    {
+        "id": 34,
+        "Question": "Is JotForm GDPR-compliant",
+        "Tag": "GDPR compliance",
+        "Answer": "Yes, JotForm complies with the General Data Protection Regulation (GDPR) standards. It offers tools and features that help you collect, manage, and protect user data in alignment with GDPR requirements."
+    },
+    {
+        "id": 35,
+        "Question": "Can I send conditional email notifications based on form responses",
+        "Tag": "conditional email notifications",
+        "Answer": "Yes, you can set up conditional email notifications in JotForm. Depending on the user's responses, you can configure different notification emails to be sent to specific recipients."
+    },
+    {
+        "id": 36,
+        "Question": "Does JotForm have a form revision history",
+        "Tag": "form revision history",
+        "Answer": "Yes, JotForm keeps a revision history of your forms. You can access and revert to previous versions of your form design or content, helping you manage changes and updates effectively."
+    },
+    {
+        "id": 37,
+        "Question": "Can I create appointment scheduling forms",
+        "Tag": "appointment scheduling forms",
+        "Answer": "Yes, JotForm offers templates and tools to create appointment scheduling forms. You can set up time slots, allow users to select preferred timings, and manage appointments easily."
+    },
+    {
+        "id": 38,
+        "Question": "Can I create subscription forms for newsletters",
+        "Tag": "subscription forms",
+        "Answer": "Yes, you can create subscription forms to collect user information for newsletters and updates. Integrations with email marketing platforms like Mailchimp and Constant Contact make it seamless."
+    },
+    {
+        "id": 39,
+        "Question": "Can users access forms offline",
+        "Tag": "offline form access",
+        "Answer": "Yes, JotForm allows you to enable offline form access using the JotForm Mobile Forms app. Users can fill out forms offline, and the app will sync data when an internet connection is available."
+    },
+    {
+        "id": 40,
+        "Question": "Does JotForm track form abandonment",
+        "Tag": "form abandonment tracking",
+        "Answer": "Yes, JotForm provides form abandonment tracking, allowing you to identify where users leave your form. This insight helps optimize your forms and improve completion rates."
+    },
+    {
+        "id": 41,
+        "Question": "Can I create forms that allow image uploads",
+        "Tag": "image upload forms",
+        "Answer": "Yes, JotForm supports image upload fields. Users can upload images directly through the form, making it suitable for creative submissions, design contests, and more."
+    },
+    {
+        "id": 42,
+        "Question": "Can I share forms on social media",
+        "Tag": "share form social media",
+        "Answer": "Yes, you can share your forms on social media platforms by providing the form's unique URL. This helps reach a wider audience and encourages participation."
+    },
+    {
+        "id": 43,
+        "Question": "Is there a mobile app for creating forms",
+        "Tag": "mobile app forms",
+        "Answer": "\"Yes, JotForm offers a mobile app called \"\"JotForm Mobile Forms\"\" that allows you to create and manage forms on the go using your mobile device.\""
+    },
+    {
+        "id": 44,
+        "Question": "Does JotForm have GDPR consent fields",
+        "Tag": "GDPR consent fields",
+        "Answer": "Yes, JotForm provides GDPR consent fields that allow users to explicitly give their consent for data processing, ensuring compliance with data protection regulations."
+    },
+    {
+        "id": 45,
+        "Question": "Can I translate forms into different languages",
+        "Tag": "different languages",
+        "Answer": "Yes, JotForm supports language translations. You can customize form labels, messages, and instructions to create forms in various languages for a global audience."
+    },
+    {
+        "id": 46,
+        "Question": "Can I set a limit on form submissions",
+        "Tag": "limit form submissions",
+        "Answer": "Yes, JotForm allows you to set submission limits for your forms. You can define the maximum number of submissions you wish to accept, ensuring controlled participation."
+    },
+    {
+        "id": 47,
+        "Question": "Are there advanced form fields available",
+        "Tag": "advanced form fields",
+        "Answer": "Yes, JotForm offers a variety of advanced form fields beyond basic input fields. These include e-signatures, file uploads, geolocation, and more, enhancing the versatility of your forms."
+    },
+    {
+        "id": 48,
+        "Question": "Can I create forms with conditional pricing",
+        "Tag": "conditional pricing",
+        "Answer": "Yes, JotForm supports conditional pricing fields. You can create forms where the total price changes based on the user's selections, such as quantity or options chosen."
+    },
+    {
+        "id": 49,
+        "Question": "What types of survey questions can I create",
+        "Tag": "what types survey questions",
+        "Answer": "JotForm provides various survey question types, including multiple choice, rating scales, open text fields, matrix questions, and more, allowing you to gather diverse feedback."
+    },
+    {
+        "id": 50,
+        "Question": "Can I integrate JotForm with third party apps",
+        "Tag": "integrate third party app",
+        "Answer": "Yes, JotForm offers integrations with a range of third-party applications, such as Google Workspace, Dropbox, Trello, and more, enhancing the functionality of your forms."
+    },
+    {
+        "id": 51,
+        "Question": "Can I password-protect my forms",
+        "Tag": "password protect",
+        "Answer": "Yes, you can password-protect your forms in JotForm. Users need to enter a password to access the form, making it suitable for restricted access situations."
+    },
+    {
+        "id": 52,
+        "Question": "Does JotForm support branching logic in forms",
+        "Tag": "support branching logic form",
+        "Answer": "Yes, JotForm supports branching logic, allowing you to create dynamic forms that show different questions or sections based on the user's responses."
+    },
+    {
+        "id": 53,
+        "Question": "Can I archive old forms",
+        "Tag": "archive forms",
+        "Answer": "Yes, you can archive old forms in JotForm to declutter your account. Archived forms remain accessible but are moved out of the main forms list."
+    },
+    {
+        "id": 54,
+        "Question": "test",
+        "Tag": "testttt",
+        "Answer": "I couldn't understand what you meant, please be more explanatory."
+    },
+    {
+        "id": 55,
+        "Question": "this cause an error!!",
+        "Tag": "test test",
+        "Answer": "I couldn't understand what you meant, please be more explanatory."
+    }
+]
