@@ -1,20 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react';
-// import '@jotforminc/jotform.css'
 
-// import BotBody from "./BotBody";
 import BotIcon from "./BotIcon";
 import ApiResponse from "./ApiResponse.js";
-import "../css/variables.css";
-import "../css/style.css";
 import SearchInput from "./SearchInput";
 import Themes from "./Themes";
 import themes from "../theme/themes.js"
-import Greetings from "./Greetings";
 import jotformBG from "../assets/png/jotform-bg.png"
+import "../css/variables.css";
+import "../css/style.css";
 
-import {AiOutlineClose} from 'react-icons/ai';
-import {BsFillBrushFill} from 'react-icons/bs';
-import {BiSolidSend} from 'react-icons/bi';
+// Icons
+import { AiOutlineClose } from 'react-icons/ai';
+import { BsFillBrushFill } from 'react-icons/bs';
+import { BiSolidSend } from 'react-icons/bi';
 
 function App() {
 
@@ -28,15 +26,11 @@ function App() {
   const [currentTheme, setCurrentTheme] = useState("dark");
   const [isTyping, setIsTyping] = useState(true);
   const themeColor = themes[currentTheme];
-  const input = document.querySelector("input");
   let timeoutId;
-  let inputValue = "";
-  // const apiKey = process.env.API_KEY;
 
   const toggleIcon = () => {
     setshowIcon(false);
     setShowBody(true);
-    // setBotMessage("")
   };
 
   const toggleBody = () => {
@@ -44,29 +38,19 @@ function App() {
     setShowBody(false);
   };
 
-  const passLastMessage = (e) => {
-
-    console.log(e?.target?.value)
-  }
-
   const passBotMessage = (botMessage) => {
     setBotMessage(botMessage)
-    // console.log("BOT MESSAGE AAAAAAAAAAAAAAAAAAAAAAAAA: ", botMessage)
   }
 
   const returnLastMessage = (returnMessage) => {
     setReturnMessage(returnMessage);
   }
 
-  // // console.log("props.botMessage TOP OF BOTBODY: ", props.botMessage)
-  // console.log("props.botMessage TYPE OF TOP OF BOTBODY: ", typeof {botMessage})
-
-  // // const lastMessage = messageList[messageList.length]?.message
-
   const toggleTheme = (newTheme) => {
     setCurrentTheme(newTheme);
   };
 
+  // Set bot message in messageList according to response from ApiResponse.js
   const getBotMessage = () => {
     const botAnswer = {
       id: messageList.length,
@@ -74,23 +58,18 @@ function App() {
       message: botMessage,
     };
 
-
     if (botAnswer.message === "" && messageList.length < 1) {
       botAnswer.message = "👋 Hello there! Welcome to our chatbot service. How can I assist you today?"
       setMessageList(messageList => [...messageList, botAnswer]);
-      console.log("THIS İS UNDEFINED")
     } else if (botAnswer.message === undefined && messageList.length >= 1) {
       botAnswer.message = "I couldn't understand what you meant, please be more explanatory."
       setMessageList(messageList => [...messageList, botAnswer]);
-      console.log("THIS İS UNDEFINEDDDDD")
     } else {
-      // console.log("newMessage.message", props.botMessage)
       setMessageList(messageList => [...messageList, botAnswer]);
     }
-
   }
 
-  // Send new message
+  // Send new message from user
   const sendMessage = () => {
     const input = document.querySelector("input");
     const newMessage = {
@@ -102,8 +81,6 @@ function App() {
 
     if (input?.value !== "") {
       setMessageList(messageList => [...messageList, newMessage])
-      inputValue = input?.value;
-      // console.log(inputValue)
       if (input.value) {
         input.value = "";
       }
@@ -112,12 +89,7 @@ function App() {
     }
   };
 
-  // const emptyValue = () => {
-  //   setEmptyInput("");
-  // }
-
-  // console.log("messageList:", messageList)
-
+  // Set timing bot response message
   useEffect(() => {
     clearTimeout(timeoutId);
     timeoutId = setTimeout(getBotMessage, 2000)
@@ -142,9 +114,10 @@ function App() {
     style.setProperty("--search-area__btn__bg-hover", themeColor.headerCloseBgHoverColor)
   }
 
+  // Go to end of chat area after bot response and toggleIcon
   const messagesEndRef = useRef(null);
   const scrolToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({behavior: "smooth"})
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
   }
 
   // Load message list 
@@ -179,13 +152,11 @@ function App() {
   }, [messageList, showBody]);
 
   return (
-    <div className='bg-gradient-to-b from-white via-white to-black bg-opacity-50 w-full h-screen' style={{
+    <div className='w-full h-screen' style={{
       background: `url(${jotformBG})`,
       backgroundSize: "cover",
-      backdropFilter: "blur(4px)",
     }}>
-      {showIcon && <BotIcon onButtonClick={toggleIcon} className="w-full h-full"/>}
-      {/* {showBody && <BotBody onButtonClick={toggleBody} sendLastMessage={passLastMessage} botMessage={botMessage} returnMessage={returnMessage} />} */}
+      {showIcon && <BotIcon onButtonClick={toggleIcon} className="w-full h-full" />}
 
       {showBody && <div className="w-full h-full relative">
         <div className="absolute right-2 bottom-2 w-96 ">
@@ -218,9 +189,6 @@ function App() {
             }}
           >
             <div className="mt-1 chatArea relative">
-
-              {/* Default Bot message */}
-              {/* <Greetings /> */}
 
               {/* Message List  */}
               {messageList.map(item => (
@@ -259,6 +227,7 @@ function App() {
                   </div>
               ))}
 
+              {/* Typing animation */}
               {isTyping && <p className="absolute ml-2 radius-sm h-auto mt-1 p-1 text-white" style={{
                 width: "fit-content",
                 backgroundColor: themeColor.textBoxBotColor,
@@ -273,9 +242,9 @@ function App() {
               backgroundColor: themeColor.textAreaBgColor,
               borderColor: themeColor.textAreaBorderColor,
             }}>
-            <SearchInput sendMessage={sendMessage} currentTheme={currentTheme} passLastMessage={passLastMessage} />
+            <SearchInput sendMessage={sendMessage} currentTheme={currentTheme} />
 
-            <button onClick={e => { sendMessage(); passLastMessage() }} >
+            <button onClick={e => { sendMessage() }} >
               <BiSolidSend className="icon-wrapper search-icons w-8 h-8 radius-lg p-1 duration-300 rounded-sm" style={{
               }}
               />
@@ -289,12 +258,12 @@ function App() {
             {showThemes && <Themes toggleTheme={toggleTheme} />}
           </div>
         </div>
-      </div>}      
+      </div>}
 
       <ApiResponse lastMessage={lastMessage} botLastMessage={passBotMessage} returnLastMessageFromBot={returnLastMessage} />
     </div>
 
-    
+
   );
 }
 
