@@ -1,5 +1,6 @@
 # Jotbot
-Live preview  [JotBot](https://sevro49-jotbot.netlify.app/)
+## That's a chatbot called Jotbot!! 
+<br> Live preview  [JotBot](https://sevro49-jotbot.netlify.app/)
 
 **NOTE:** I developed this project during my 2023 summer internship at Jotform. I utilized the API and CSS provided by Jotform during the internship but I was not allowed to share them. I transferred the data I could retrieve with the API to a .json file and used Tailwind CSS instead of Jotform CSS
 
